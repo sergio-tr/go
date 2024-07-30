@@ -36,7 +36,9 @@ func Application(log string) string {
 // Replace replaces all occurrences of old with new, returning the modified log
 // to the caller.
 func Replace(log string, oldRune, newRune rune) string {
+
 	builder := strings.Builder{}
+
 	for _, char := range log {
 
 		if char == oldRune {
